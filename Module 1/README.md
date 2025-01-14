@@ -14,6 +14,20 @@ postgres:5432
 Questin #3 (Trip Segmentation Count):
 How Many Trips Happened: Up to One Mile, Between 1 & 3 Miles, Between 7 & 10 Miles, and Over 10 Miles?
 
+QUERY:
+select count(1) --,cast(lpep_pickup_datetime as date), cast(lpep_dropoff_datetime as date)
+from green_taxi_2019_10
+where cast(lpep_pickup_datetime as date) between '2019-10-01' and '2019-10-31'
+and cast(lpep_pickup_datetime as date) between '2019-10-01' and '2019-10-31'
+and trip_distance > 10
+--and trip_distance > 7 and trip_distance <= 10
+--and trip_distance > 3 and trip_distance <= 7
+--and trip_distance > 1 and trip_distance <= 3
+-- and trip_distance < 1
+;
+
+ANSWER:
+104,838; 199,013; 109,645; 27,688; 35,202
 
 Question #4 (Longest Trip):
 Which Day Had the Longest Trip Distance?
