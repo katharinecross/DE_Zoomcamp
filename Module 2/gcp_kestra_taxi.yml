@@ -1,0 +1,43 @@
+id: gcp_kestra_taxi
+namespace: zoomcamp
+
+tasks:
+  - id: gcp_creds
+    type: io.kestra.plugin.core.kv.Set
+    key: GCP_CREDS
+    kvType: JSON
+    value: |
+      {
+      "removed for security"
+      }
+  
+  - id: gcp_project_id
+    type: io.kestra.plugin.core.kv.Set
+    key: GCP_PROJECT_ID
+    kvType: STRING
+    value: sunlit-precinct-447121-u1 #replace with project id
+
+  - id: gcp_location
+    type: io.kestra.plugin.core.kv.Set
+    key: GCP_LOCATION
+    kvType: STRING
+    value: us-east4 #may need to change
+
+  - id: gcp_bucket_name
+    type: io.kestra.plugin.core.kv.Set
+    key: GCP_BUCKET_NAME
+    kvType: STRING
+    value: kc-zoomcamp-kestra-bucket #replace with bucket name 
+
+  - id: gcp_dataset
+    type: io.kestra.plugin.core.kv.Set
+    key: GCP_DATASET
+    kvType: STRING
+    value: kc_de_zoomcamp
+
+
+
+
+
+
+  
