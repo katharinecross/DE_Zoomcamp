@@ -6,4 +6,7 @@ Each Module Has its own README.md with Homework Answers (May Include Queries and
 
 # Modules:
 Module 1) Docker, Postgres, and Terraform
+
 Module 2) ETL Pipelines, Google Cloud Platform
+
+Module 3) Data Warehouse, GCP & BigQuery, ML 
