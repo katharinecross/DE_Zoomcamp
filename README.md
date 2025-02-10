@@ -10,3 +10,5 @@ Module 1) Docker, Postgres, and Terraform
 Module 2) ETL Pipelines, Google Cloud Platform
 
 Module 3) Data Warehouse, GCP & BigQuery, ML 
+
+Workshop 1) Data Ingestion with dlt
